@@ -56,9 +56,7 @@ console.log(index);
 
 const deletetask = (description) => {
   loadDB();
-  let newList = listTodo.filter(task => {
-    return task.description !== description
-  });
+  let newList = listTodo.filter(task =>  task.description !== description);
 
   if(listTodo.length === newList.length){
     return false;
